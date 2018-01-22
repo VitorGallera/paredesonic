@@ -2,38 +2,39 @@ body{
 	background-color: #00263b;
 }
 
-.menu-topo{
-	background-color: #68696b;
-	height: 40px;
-}
-
+/*redimensiona o logo em mobile*/
 .sonic-logo{
 	width: 60%;
     margin: 20px;
 }
+/*redimensiona o sanduiche do menu mobile*/
 .navbar-toggle {
 	margin-top: 15px;
 	margin-right: 30px;
 	padding: 15px;
 }
+/*Tira o margin bottom da nav original do bootstrao*/
 .navbar{
 	margin-bottom: 0px;
 }
+/*barra de progresso das perguntas*/
 .barra{
 	height: 10px;
 	background-color: #ff6e19;
 }
+/*crontrola o tamnho e da cor a caixa de pergunta*/
 .caixa-pergunta{
 	margin: 40px;
 	width: 80%;
 	height: inherit;
 	background-color: white;
 }
-.pergunta{
+/*distancia a pergunta da caixa PASSAR PARA FLEX*/
+.pergunta-p1{
 	padding: 10px;
 }
-
-.resposta{
+/*Centraliza e organiza a resposta*/
+.resposta-p1{
 	display: flex;
 	justify-content: space-around;
 	padding-bottom: 10px;

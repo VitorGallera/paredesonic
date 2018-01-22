@@ -19,23 +19,31 @@ body{
 }
 /*barra de progresso das perguntas*/
 .barra{
-	height: 10px;
+	height: 5px;
 	background-color: #ff6e19;
 }
 /*crontrola o tamnho e da cor a caixa de pergunta*/
 .caixa-pergunta{
-	margin: 40px;
-	width: 80%;
+	padding: 20px;
+
+	/*margin: 40px;*/
+	/*width: 80%;*/
 	height: inherit;
 	background-color: white;
-	border-radius: 10px;
-	padding-top: 1%;
+	/*border-radius: 10px;*/
 }
+.main-caixa{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
 /*distancia a pergunta da caixa*/
 .pergunta-p1{
 	display: flex;
 	justify-content: center;
 	margin: 10px;
+    margin-bottom: 20px;
 }
 /*Centraliza e organiza a resposta*/
 .resposta-p1{
@@ -64,53 +72,59 @@ body{
   border-color: #FA6A25;
 }
 
-/*Ajusta o tamanho da caixinha branca e do logo para diferentes resoluções(ATENCAO AQUI)*/
-@media (min-width: 600px){
-.caixa-pergunta{
-	width: 40%;
-	margin-left: 30%;
-}
-.sonic-logo{
-	width: 50%;
-    margin: 20px;
-}
-@media (min-width: 700px){
-.caixa-pergunta{
-	width: 35%;
-	margin-left: 30%;
-}
-.sonic-logo{
-	width: 45%;
-    margin: 20px;
-}
-@media (min-width: 800px){
-.caixa-pergunta{
-	width: 35%;
-	margin-left: 30%;
-}
-.sonic-logo{
-	width: 35%;
-    margin: 20px;
-}
-}
-@media (min-width: 1000px){
-.caixa-pergunta{
-	width: 40%;
-	 margin-left: 30%;
-}
-.sonic-logo{
-	width: 25%;
-    margin: 20px
-}
+.btn-sonic{
+	border-radius: 0px;
 }
 
-@media (min-width: 1200px){
-.caixa-pergunta{
-	width: 30%;
-	 margin-left: 35%;
+.header-logo{
+	height: 60px;
+	background-color: white;
 }
-.sonic-logo{
-	width: 20%;
-    margin: 20px;
+.sonic-logo-header{
+	width: 15%;
+	margin-top: 15px;
 }
+.nav-cinza{
+	height: 20px;
+	background-color: #68696b;
 }
+.lista-nav-cinza{
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+}
+
+@media (max-width:767px){
+	.header-logo{
+		display: none;
+	}
+	.sonic-logo-header{
+		display: none;
+	}
+	.nav-cinza{
+		display: none;
+	}
+	.main-caixa{
+		margin: 20px;
+	}
+}
+/*Ajusta o tamanho da caixinha branca e do logo para diferentes resoluções(ATENCAO AQUI)*/
+/*@media (min-width: 600px){
+	.caixa-pergunta{
+		width: 50%;
+		margin-left: 25%;
+	}
+	.sonic-logo{
+		width: 50%;
+	    margin: 20px;
+	}
+}*/
+@media (min-width: 767px){
+	 .sonic-logo{
+	 	display: none;
+	 }
+	 .navbar{
+	 	display: none;
+	 }
+	 
+	}

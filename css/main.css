@@ -1,4 +1,4 @@
-html{
+body{
 	background-color: #00263b;
 }
 
@@ -16,8 +16,25 @@ html{
 	margin-right: 30px;
 	padding: 15px;
 }
+.navbar{
+	margin-bottom: 0px;
+}
+.barra{
+	height: 10px;
+	background-color: #ff6e19;
+}
+.caixa-pergunta{
+	margin: 40px;
+	width: 80%;
+	height: inherit;
+	background-color: white;
+}
+.pergunta{
+	padding: 10px;
+}
 
-.progress-bar{
+.resposta{
 	display: flex;
-	
+	justify-content: space-around;
+	padding-bottom: 10px;
 }

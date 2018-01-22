@@ -13,7 +13,7 @@ body{
 	margin-right: 30px;
 	padding: 15px;
 }
-/*Tira o margin bottom da nav original do bootstrao*/
+/*Tira o margin bottom da nav original do bootstrap*/
 .navbar{
 	margin-bottom: 0px;
 }
@@ -28,14 +28,89 @@ body{
 	width: 80%;
 	height: inherit;
 	background-color: white;
+	border-radius: 10px;
+	padding-top: 1%;
 }
-/*distancia a pergunta da caixa PASSAR PARA FLEX*/
+/*distancia a pergunta da caixa*/
 .pergunta-p1{
-	padding: 10px;
+	display: flex;
+	justify-content: center;
+	margin: 10px;
 }
 /*Centraliza e organiza a resposta*/
 .resposta-p1{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	padding-bottom: 10px;
+}
+
+/*Define as cores dos botões e do hover*/
+.btn-default-1{
+  color: white;
+  background-color: #FA6A25;
+  border-color: #FA6A25;
+  margin-right: 40px;
+}
+
+.btn-default-2{
+  color: white;
+  background-color: #FA6A25;
+  border-color: #FA6A25;
+}
+
+.btn-default-1:hover, .btn-default-2:hover{
+  color: #FA6A25;
+  background-color: white;
+  border-color: #FA6A25;
+}
+
+/*Ajusta o tamanho da caixinha branca e do logo para diferentes resoluções(ATENCAO AQUI)*/
+@media (min-width: 600px){
+.caixa-pergunta{
+	width: 40%;
+	margin-left: 30%;
+}
+.sonic-logo{
+	width: 50%;
+    margin: 20px;
+}
+@media (min-width: 700px){
+.caixa-pergunta{
+	width: 35%;
+	margin-left: 30%;
+}
+.sonic-logo{
+	width: 45%;
+    margin: 20px;
+}
+@media (min-width: 800px){
+.caixa-pergunta{
+	width: 35%;
+	margin-left: 30%;
+}
+.sonic-logo{
+	width: 35%;
+    margin: 20px;
+}
+}
+@media (min-width: 1000px){
+.caixa-pergunta{
+	width: 40%;
+	 margin-left: 30%;
+}
+.sonic-logo{
+	width: 25%;
+    margin: 20px
+}
+}
+
+@media (min-width: 1200px){
+.caixa-pergunta{
+	width: 30%;
+	 margin-left: 35%;
+}
+.sonic-logo{
+	width: 20%;
+    margin: 20px;
+}
 }

@@ -52,18 +52,24 @@ body{
 	padding-bottom: 10px;
 }
 
-/*Define as cores dos botões e do hover*/
+/*Define as cores dos botões e do hover IMPORTANTE N MUDAR*/
 .btn-default-1{
   color: white;
   background-color: #FA6A25;
   border-color: #FA6A25;
   margin-right: 40px;
+  -webkit-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
 }
 
 .btn-default-2{
   color: white;
   background-color: #FA6A25;
   border-color: #FA6A25;
+  -webkit-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
 }
 
 .btn-default-1:hover, .btn-default-2:hover{
@@ -73,7 +79,7 @@ body{
 }
 
 .btn-sonic{
-	border-radius: 0px;
+	border-radius: 0px; 
 }
 
 .header-logo{
@@ -128,3 +134,25 @@ body{
 	 }
 	 
 	}
+
+
+/*PAGINA P5*/
+.resposta_p5{
+	border-radius: 0px; 
+	color: #ff6e19;
+	margin-right: 40px;
+	-webkit-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+}
+
+.botao-resposta5 {
+	-webkit-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.75);
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+     color: none; 
+
+}
